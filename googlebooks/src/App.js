@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
-import { BrowseRouter as Router, Route, Switch } from "react-router-dom"
 import Nav from "./components/Nav/index"
 import Jumbotron from "./components/Jumbotron/index"
 import Search from "./pages/Search"
 import Saved from "./pages/Saved"
+import { BrowseRouter as Router, Route, Switch } from "react-router-dom"
+import './App.css';
 
 
 
@@ -16,7 +16,6 @@ function App() {
       <Jumbotron />
       <Router>
       <div>
-        {/* <Navbar /> */}
         <Switch>
         <Route exact path="/" component={Search}/>
         <Route exact path="/saved" component={Saved}/>
